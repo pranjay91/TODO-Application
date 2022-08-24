@@ -18,7 +18,8 @@ app.listen(process.env.PORT || 3009 , (err)=>{
         }
 })
 
-mongoose.connect("mongodb://localhost/todo-app",()=>{
+//mongoose.connect("mongodb://localhost/todo-app",()=>{
+    mongoose.connect("mongodb+srv://pranjay:Pranjay9199@cluster0.mzmgp.mongodb.net/todo-app?retryWrites=true&w=majority",()=>{
     console.log("Successfully connected to db")
 },(err)=>{
     console.log(err)
